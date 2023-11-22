@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/txtHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="Heading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTentacgia"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="86dp"
+        android:ems="10"
+        android:hint="Tên tác giả"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeading" />
+
+    <EditText
+        android:id="@+id/etDienthoai"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="phone"
+        app:layout_constraintEnd_toEndOf="@+id/etDiachi"
+        app:layout_constraintStart_toStartOf="@+id/etDiachi"
+        app:layout_constraintTop_toBottomOf="@+id/etDiachi" />
+
+    <EditText
+        android:id="@+id/etDiachi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Địa chỉ"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etTentacgia"
+        app:layout_constraintStart_toStartOf="@+id/etTentacgia"
+        app:layout_constraintTop_toBottomOf="@+id/etTentacgia" />
+
+    <Button
+        android:id="@+id/positiveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Lưu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etDienthoai" />
+
+    <TextView
+        android:textColor="#3C3A3A"
+        android:textSize="16sp"
+        android:text="Hủy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/negativeButton"
+        app:layout_constraintTop_toBottomOf="@+id/positiveButton"
+        android:layout_marginTop="20dp" app:layout_constraintEnd_toEndOf="@+id/positiveButton"
+        app:layout_constraintStart_toStartOf="@+id/positiveButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

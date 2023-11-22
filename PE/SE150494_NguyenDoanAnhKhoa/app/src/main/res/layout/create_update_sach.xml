@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp">
+
+    <TextView
+        android:id="@+id/txtHeading1"
+        android:layout_width="wrap_content"
+        android:layout_height="67dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="center"
+        android:text="Heading"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTensach"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="86dp"
+        android:ems="10"
+        android:hint="Tên sách"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeading1" />
+
+    <EditText
+        android:id="@+id/etNgayxb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Ngày xb - dd/MM/yyyy"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/etTheloai"
+        app:layout_constraintTop_toBottomOf="@+id/etTheloai" />
+
+    <Spinner
+        android:id="@+id/spTacgia"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:dropDownWidth="match_parent"
+        android:spinnerMode="dropdown"
+        app:layout_constraintStart_toStartOf="@+id/etNgayxb"
+        app:layout_constraintTop_toBottomOf="@+id/etNgayxb" />
+
+    <EditText
+        android:id="@+id/etTheloai"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Thể loại"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/etTensach"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/etTensach"
+        app:layout_constraintTop_toBottomOf="@+id/etTensach" />
+
+    <Button
+        android:id="@+id/positiveButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="58dp"
+        android:layout_marginTop="49dp"
+        android:backgroundTint="#4CAF50"
+        android:text="Lưu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spTacgia" />
+
+    <TextView
+        android:id="@+id/negativeButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Hủy"
+        android:textColor="#3C3A3A"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/positiveButton1"
+        app:layout_constraintStart_toStartOf="@+id/positiveButton1"
+        app:layout_constraintTop_toBottomOf="@+id/positiveButton1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
