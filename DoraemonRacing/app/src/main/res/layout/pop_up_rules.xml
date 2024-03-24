@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beachrace">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88000000" />
+
+    <LinearLayout
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/popup_model"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:text="Hướng dẫn luật chơi và quy tắc đặt cược"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:text="Người chơi có thể chọn nhân vật : Người chơi sẽ chọn 1 hoặc 2 trong tổng số 5 nhân vật để đặt cược trước khi cuộc đua bắt đầu." />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:text="Cược: Người chơi sẽ đặt cược số tiền của họ lên hai nhân vật mình đã chọn. Cược sẽ được ghi lại trước khi bắt đầu cuộc đua.
+
+Cuộc đua: Sau khi cược đã được đặt, cuộc đua sẽ bắt đầu. Các nhân vật sẽ cạnh tranh trên một đường đua." />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:text="Xác định người thắng cuộc: Người thắng cuộc sẽ là người chơi có nhân vật hoàn thành đường đua đầu tiên. Người chơi này sẽ nhận được tổng số tiền cược từ tất cả người chơi khác." />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:text="Thưởng: Người chơi thắng cuộc sẽ nhận. Số tiền thắng được tính dựa trên tỷ lệ cược số tiền cược là 80% + tiền cược + tiền gốc khi cược. Khi thua người chơi sẽ mất tiền gốc khi cược" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/chaien" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/nobita" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRules"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="#106E14"
+            android:gravity="center"
+            android:text="Tôi đã hiểu rồi"
+            android:theme="@style/Theme.MaterialComponents" />
+
+    </LinearLayout>
+</RelativeLayout>

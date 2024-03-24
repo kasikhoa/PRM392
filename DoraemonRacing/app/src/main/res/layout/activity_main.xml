@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="20"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/gioithieu"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_above="@+id/racingArea"
+        android:layout_weight="6"
+        android:background="@drawable/doraemon_and_friend"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <!-- First layout - section 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/totalMoney"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="#AD0D2659"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:text="1000"
+                android:textColor="#fff" />
+
+            <!--Empty space-->
+            <EditText
+                android:id="@+id/emtysapce"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2.5"
+                android:background="#00FFFFFF"
+                android:ems="10"
+                android:inputType="text"
+                android:paddingLeft="10dp"
+                android:textColor="#00FFFFFF" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="end"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/transparent_drawable"
+                    app:srcCompat="@drawable/logout" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- First layput - section 2 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/title" />
+        </LinearLayout>
+
+        <!--First layout - section 3-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="5dp">
+
+                <EditText
+                    android:id="@+id/moneyAdd"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="#B20A3298"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:paddingLeft="10dp"
+                    android:text="1000"
+                    android:textColor="#ffff" />
+
+                <Button
+                    android:id="@+id/btnCharge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignRight="@+id/moneyAdd"
+                    android:layout_weight="1"
+                    android:background="#00FFFFFF"
+                    android:text="Nạp"
+                    android:textColor="#FF5722"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00FFFFFF"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/question_icon" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/racingArea"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="14"
+        android:background="@drawable/beachrace"
+        android:orientation="vertical"
+        android:weightSum="15">
+        <!-- Để dành chỗ cho bài biển-->
+
+        <!--Nobia race-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center">
+
+            <RelativeLayout
+                android:id="@+id/popupContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="41dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginEnd="24dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBoxNobita"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:id="@+id/sb_race_nobita_1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:progressDrawable="@drawable/transparent_drawable"
+                android:thumb="@drawable/nobita"></SeekBar>
+
+            <EditText
+                android:id="@+id/editTextNumber2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#C39F78"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!--Shizuka race-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBoxShizuka"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:id="@+id/sb_race_shizuka_2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:progressDrawable="@drawable/transparent_drawable"
+                android:thumb="@drawable/shizuka"></SeekBar>
+
+            <EditText
+                android:id="@+id/editTextNumber3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#C39F78"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!-- Doraemon race-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBoxDoraemon"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:id="@+id/sb_race_doraemon_3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:progressDrawable="@drawable/transparent_drawable"
+                android:thumb="@drawable/doraemon"></SeekBar>
+
+            <EditText
+                android:id="@+id/editTextNumber4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#C39F78"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!-- Suneo race-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBoxSuneo"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:id="@+id/sb_race_suneo_4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:progressDrawable="@drawable/transparent_drawable"
+                android:thumb="@drawable/suneo"></SeekBar>
+
+            <EditText
+                android:id="@+id/editTextNumber5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#C39F78"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!-- Chaien race-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <CheckBox
+                android:id="@+id/checkBoxChaien"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <SeekBar
+                android:id="@+id/sb_race_chaien_5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="6.5"
+                android:progressDrawable="@drawable/transparent_drawable"
+                android:thumb="@drawable/chaien"></SeekBar>
+
+            <EditText
+                android:id="@+id/editTextNumber6"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="#C39F78"
+                android:ems="10"
+                android:inputType="number"
+                android:text="0"
+                android:textColor="#fff" />
+
+        </LinearLayout>
+
+        <!--Play Button-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:backgroundTint="#F44336"
+                android:padding="15dp"
+                android:text="Bắt đầu"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+

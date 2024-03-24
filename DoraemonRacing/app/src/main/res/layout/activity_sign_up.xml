@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beachrace">
+
+    <TextView
+        android:id="@+id/txtHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:text="Sign Up Form"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSignUpName"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/txtHeader"
+        app:layout_constraintStart_toStartOf="@+id/txtHeader"
+        app:layout_constraintTop_toBottomOf="@+id/txtHeader" />
+
+    <EditText
+        android:id="@+id/etSignUpPass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etSignUpName"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpName"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpName" />
+
+    <EditText
+        android:id="@+id/etSignUpConfirmPass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/etSignUpPass"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpPass"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpPass" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:clickable="true"
+        android:text="Already Account? Sign In"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSignUpConfirmPass"
+        app:layout_constraintStart_toStartOf="@+id/etSignUpConfirmPass"
+        app:layout_constraintTop_toBottomOf="@+id/etSignUpConfirmPass" />
+
+    <TextView
+        android:id="@+id/txtOr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="-----OR-----"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/txtLogin"
+        app:layout_constraintStart_toStartOf="@+id/txtLogin"
+        app:layout_constraintTop_toBottomOf="@+id/txtLogin" />
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="SIGN UP"
+        android:backgroundTint="#F44336"
+        app:layout_constraintEnd_toEndOf="@+id/txtOr"
+        app:layout_constraintStart_toStartOf="@+id/txtOr"
+        app:layout_constraintTop_toBottomOf="@+id/txtOr" />
+</androidx.constraintlayout.widget.ConstraintLayout>
